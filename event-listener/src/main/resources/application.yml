@@ -1,0 +1,15 @@
+spring:
+  data:
+    rest:
+      base-path: /api
+      detection-strategy: ANNOTATED
+
+  datasource:
+    url: jdbc:mariadb://localhost:3306/test?rewriteBatchedStatements=true
+    password: root
+    username: root
+    driver-class-name: org.mariadb.jdbc.Driver
+    hikari:
+      maximum-pool-size: 20
+      idle-timeout: 100000
+      connection-timeout: 100000
